@@ -1,0 +1,3 @@
+# Mine Cells Configuration
+
+TOOD
