@@ -9,7 +9,7 @@
 
 ---
 
-## Mine Cells {style="display:none;"}
+## Mine Cells {: .invisible-heading}
 
 <div class="center-images" markdown>
   [![Mine Cells](minecells/img/logo.svg)](./minecells/index.md)

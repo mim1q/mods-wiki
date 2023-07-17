@@ -58,6 +58,14 @@ hr {
   font-weight: bold;
 }
 
+h1.invisible-heading,
+h2.invisible-heading,
+h3.invisible-heading {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
 @media screen and (min-width: 961px) {
   .flex-horizontal {
     display: flex;
