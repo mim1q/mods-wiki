@@ -19,7 +19,7 @@ nav:
     - Custom Mechanics:
       - Status Effects: minecells/status-effects.md
       - Elevators: minecells/elevators.md
-    - Techincal Info:
+    - Technical Info:
       - Configuration: minecells/config.md
       - For Datapack Creators: minecells/datapacks.md
       - Updating Mine Cells: minecells/updating.md

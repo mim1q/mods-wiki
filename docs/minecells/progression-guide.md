@@ -22,6 +22,7 @@
   - [Better Combat](https://modrinth.com/mod/better-combat) - custom attack animations for the weapons of Mine Cells
   - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric) - loot in chests is generated for each player separately
   - [Gravestones](https://modrinth.com/mod/gravestones) - will make retrieving your items after death a lot easier
+  - [Disable Custom Worlds Advice](https://modrinth.com/mod/dcwa) - removes the annoying pop-up every time you open a world
 ///
 
 /// info | Recommended Shader Packs
