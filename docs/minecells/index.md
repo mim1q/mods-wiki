@@ -11,7 +11,7 @@
   [![Download on CurseForge](../img/curseforge.svg)](https://www.curseforge.com/minecraft/mc-mods/minecells)
   [![Requires Fabric API](../img/fabric.svg)](https://modrinth.com/mod/fabric-api)
   [![Requires owo-lib](../img/owo.svg)](https://modrinth.com/mod/owo-lib)
-  [![Support me on Ko-Fi](../img/kofi.svg)](https:ko-fi.com/mim1q)
+  [![Support me on Ko-Fi](../img/kofi.svg)](https://ko-fi.com/mim1q)
   [![Join my Discord](../img/discord.svg)](https://discord.gg/6TjQbSjbuB)
   </div>
 </div>
