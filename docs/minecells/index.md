@@ -3,7 +3,8 @@
 <div class="center-images" markdown>
   <div markdown>
 
-  ![Mine Cells Logo](img/logo.svg)
+![Mine Cells Logo](img/logo.svg)
+
   </div>
   <div markdown>
   
@@ -16,6 +17,12 @@
   </div>
 </div>
 
+/// warning | This wiki is going to be maintained for the newest version of the mod.
+If you're using older releases, some features described here might be missing in your installation.  
+I'll try my best to mark which features got implemented in which versions!
+
+///
+
 ## About the mod
 
 _Mine Cells_ is a mod that brings the world of [_Dead Cells_ by Motion Twin](https://store.steampowered.com/app/588650/Dead_Cells/) into _Minecraft_.
@@ -23,15 +30,13 @@ _Mine Cells_ is a mod that brings the world of [_Dead Cells_ by Motion Twin](htt
 This wiki should tell you everything you need to know about the mod! In case some info is missing, feel free to [Join my Discord server](https://discord.gg/rnyRWfEpVv) and ask
 whatever you need to know!
 
-Keep in mind - **this wiki will be updated for the most recent version of Mine Cells**, so you might not find some info about outdated builds.
-
 ---
 
-## Frequently Asked Questions  
+## Frequently Asked Questions
 
 > How do I do ... in Mine Cells?
 
-Every question you have should be answered in this wiki! There's a search bar if you need to look something up. 
+Every question you have should be answered in this wiki! There's a search bar if you need to look something up.
 If you have trouble finding it, join my Discord (linked above) so I can help you out.  
 All existing crafting recipes are available through mods such as REI and are not shown here.
 
@@ -52,13 +57,13 @@ I would be grateful if you sent me the video link so I can check it out!
 > Will you add ... to this mod?
 
 This mod aims to add most of the content from Dead Cells (except the Castlevania DLC) to Minecraft. If it is present in Dead
-Cells, it'll probably be added to this mod, sooner or later. Some unique tweaks and additions were made in order to make the 
+Cells, it'll probably be added to this mod, sooner or later. Some unique tweaks and additions were made in order to make the
 content work in the environment of Minecraft without straying too far from the source material.
 
 > Is this mod compatible with ...?
 
 This mod should be compatible with most other mods. There might be some bugs that make it crash when other mods are present,
-but I'm trying to remove them as soon as they're known. If you encounter such a bug make sure to 
+but I'm trying to remove them as soon as they're known. If you encounter such a bug make sure to
 [create an issue on Github](https://github.com/mim1q/MineCells/issues) or ask for help on my Discord!
 
 ---

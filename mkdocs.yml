@@ -4,29 +4,32 @@ site_dir: ./build/
 
 nav:
   - Home: index.md
-  - Mine Cells: 
-    - About Mine Cells: minecells/index.md
-    - Tips & Progression Guide: minecells/progression-guide.md
-    - Dimensions: minecells/dimensions.md
-    - Mobs: 
-      - Enemies: minecells/enemies.md
-      - Bosses: minecells/bosses.md
-      - WIP / Creative-Only: minecells/wip-mobs.md
-    - Items and Blocks:
-      - Decorative Blocks: minecells/blocks.md
-      - Weapons: minecells/weapons.md
-      - Runes: minecells/runes.md
-    - Custom Mechanics:
-      - Status Effects: minecells/status-effects.md
-      - Elevators: minecells/elevators.md
-    - Technical Info:
-      - Configuration: minecells/config.md
-      - For Datapack Creators: minecells/datapacks.md
-      - Updating Mine Cells: minecells/updating.md
+  - Mine Cells:
+      - About Mine Cells: minecells/index.md
+      - Tips & Progression Guide: minecells/progression-guide.md
+      - Dimensions: minecells/dimensions.md
+      - Mobs:
+          - Enemies: minecells/enemies.md
+          - Bosses: minecells/bosses.md
+          - WIP / Creative-Only: minecells/wip-mobs.md
+      - Items and Blocks:
+          - Decorative Blocks: minecells/blocks.md
+          - Weapons: minecells/weapons.md
+          - Runes: minecells/runes.md
+      - Custom Mechanics:
+          - Status Effects: minecells/status-effects.md
+          - Elevators: minecells/elevators.md
+      - Technical Info:
+          - Configuration: minecells/config.md
+          - For Datapack Creators: minecells/datapacks.md
+          - Updating Mine Cells: minecells/updating.md
 
-markdown_extensions: 
+markdown_extensions:
   - md_in_html
   - attr_list
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
   - pymdownx.blocks.admonition:
       types:
         - new
@@ -45,9 +48,10 @@ markdown_extensions:
         - quote
   - pymdownx.blocks.details:
 
-plugins: 
+plugins:
   - search
   - mkdocs-video
+  - macros
 
 theme:
   name: material
@@ -58,6 +62,5 @@ theme:
       primary: green
       accent: light green
   favicon: img/favicon.png
-
 extra_css:
   - stylesheets/extra.css
