@@ -599,9 +599,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          For Datapack Creators
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         For Datapack Creators
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spawner-rune-data" class="md-nav__link">
+    Spawner Rune Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Spawner Rune Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-attributes" class="md-nav__link">
+    Custom attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -655,6 +699,34 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#spawner-rune-data" class="md-nav__link">
+    Spawner Rune Data
+  </a>
+  
+    <nav class="md-nav" aria-label="Spawner Rune Data">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-attributes" class="md-nav__link">
+    Custom attributes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -669,7 +741,83 @@
 
 
 <div><h1 id="for-datapack-creators">For Datapack Creators</h1>
-<p>TODO</p></div>
+<h2 id="spawner-rune-data">Spawner Rune Data</h2>
+<p>Spawner Runes can be individually configured through datapacks.
+Their definitions are available in <code>data/&lt;namespace&gt;/spawner_runes/</code></p>
+<p>Here's an <code>example.json</code> Spawner Rune definition file:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="c1">// not yet implemented - should prevent the runes</span>
+<span class="w">  </span><span class="c1">// from activating multiple times at once per each nearby player.</span>
+<span class="w">  </span><span class="c1">// So it'll have to wait the given time after processing the 1st player,</span>
+<span class="w">  </span><span class="c1">// (optional, defaults to 60)</span>
+<span class="w">  </span><span class="nt">"cooldown"</span><span class="p">:</span><span class="w"> </span><span class="mf">120.0</span>
+
+<span class="w">   </span><span class="c1">// distance that the spawned mobs should "spread" in</span>
+<span class="w">   </span><span class="c1">// (optional, defaults to 0)</span>
+<span class="w">  </span><span class="nt">"spawnDistance"</span><span class="p">:</span><span class="w"> </span><span class="mf">2.0</span>
+
+<span class="w">  </span><span class="c1">// minimum player distance for the mobs to spawn</span>
+<span class="w">  </span><span class="nt">"playerDistance"</span><span class="p">:</span><span class="w"> </span><span class="mf">16.0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"pools"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="c1">// 1st pool - spawns between 2 and 3 entities, each chosen randomly</span>
+<span class="w">    </span><span class="c1">// based on their weights</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"rolls"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"uniform"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"value"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">"min_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"max_inclusive"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">"entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecells:shieldbearer"</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecells:grenadier"</span><span class="w"> </span><span class="p">},</span>
+<span class="w">        </span><span class="p">{</span><span class="w"> </span><span class="nt">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecells:inquisitor"</span><span class="w"> </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="c1">// 2nd pool - spawns one Leaping Zombie</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"rolls"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="c1">// (optional, defaults to 1)</span>
+<span class="w">          </span><span class="nt">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecells:leaping_zombie"</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>You can define these files in a datapack to override the existing Mine Cells spawner rune definitions,
+or to create custom ones.</p>
+<p>To summon a Spawner Rune defined in <code>data/&lt;namespace&gt;/spawner_runes/&lt;name&gt;.json</code>, use the command:</p>
+<div class="highlight"><pre><span></span><code>/minecells:spawnerrune spawn &lt;namespace&gt;:&lt;name&gt;
+</code></pre></div>
+<h3 id="custom-attributes">Custom attributes</h3>
+<p><span class="since">Available since <a target="_blank" href="https://modrinth.com/mod/minecells/version/1.6.1/">1.20.1-1.6.1</a></span></p>
+<p>Modpack developers can now tweak the attributes of the entities spawned by Spawner Runes individually.
+This means Mine Cells dungeons can finally be adjusted to the pack's difficulty.</p>
+<p>To tweak the attributes, include the optional <code>attributes</code> map field in the desired element of <code>entries</code>, like so:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">  </span><span class="nt">"playerDistance"</span><span class="p">:</span><span class="w"> </span><span class="mf">16.0</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"pools"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">"rolls"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">"entries"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">"weight"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"entity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"minecells:leaping_zombie"</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">"attributes"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"generic.max_health"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"generic.movement_speed"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.5</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 
 

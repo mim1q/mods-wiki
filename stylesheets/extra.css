@@ -11,14 +11,14 @@
   flex-direction: column;
 }
 
-.center-images>div>p {
+.center-images > div > p {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.center-images>div>p>* {
+.center-images > div > p > * {
   flex-basis: 25%;
 }
 
@@ -31,11 +31,11 @@ a:hover img {
 }
 
 .md-typeset .admonition.info {
-  border: none;
+  border-color: #4cae4f;
 }
 
 .md-typeset .admonition.info .admonition-title {
-  background-color: #263C28;
+  background-color: #263c28;
   padding-left: 0.5rem;
 }
 
@@ -66,6 +66,41 @@ h3.invisible-heading {
   font-size: 0;
 }
 
+.since {
+  border: 2px solid rgb(224, 65, 78);
+  background-color: rgba(224, 65, 78, 25%);
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* Code syntax highlighting */
+
+pre code {
+  background-color: #131414 !important;
+}
+
+pre code .nt {
+  color: #e06b73 !important;
+}
+
+pre code .p {
+  color: #abb2bf !important;
+}
+
+pre code .s2 {
+  color: #98c379 !important;
+}
+
+pre code .cm,
+pre code .c1 {
+  color: #858c9e !important;
+}
+
+pre code .mi,
+pre code .mf {
+  color: #d19a66 !important;
+}
+
 @media screen and (min-width: 961px) {
   .flex-horizontal {
     display: flex;
@@ -73,7 +108,7 @@ h3.invisible-heading {
     gap: 2rem;
   }
 
-  .flex-horizontal>* {
+  .flex-horizontal > * {
     width: 100%;
   }
 
