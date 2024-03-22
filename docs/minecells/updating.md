@@ -36,8 +36,8 @@ if the data somehow got corrupted.
 /// info | As a server administrator
 
 1. Navigate to your server's root folder
-2. Open the world directory
-3. Delete the directories, like in step 4. above
+2. Open the `world` directory
+3. Delete the necessary dimension directories, like in step 4. above
 
 If only one of the players is experiencing issues related to dimension teleportation etc. you can wipe only their
 data by using the `/minecells:clear_data <player>` command

@@ -38,7 +38,6 @@ markdown_extensions:
 
 plugins:
   - search
-  - mkdocs-video
   - macros
 
 theme:
@@ -47,8 +46,8 @@ theme:
     - navigation.tabs
   palette:
     - scheme: slate
-      primary: green
-      accent: light green
+      primary: deep purple
+      accent: purple
   favicon: img/favicon.png
 extra_css:
   - stylesheets/extra.css
