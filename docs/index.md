@@ -42,9 +42,12 @@ Decorative blocks for every occasion, with included functionality!
 
 ## Derelict
 
-Expansion focused around things taken over by nature, abandoned and inaccessible
+[CurseForge](https://www.curseforge.com/minecraft/mc-mods/mim1q-derelict) -
+[Modrinth](https://modrinth.com/mod/derelict) -
+[GitHub](https://github.com/mim1q/derelict) -
+[Issues](https://github.com/mim1q/derelict/issues)
 
-NOT YET RELEASED - TBD
+Expansion focused around things taken over by nature, abandoned and inaccessible
 
 ---
 

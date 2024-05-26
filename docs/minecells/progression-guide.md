@@ -19,7 +19,7 @@
 
   - [Better Combat](https://modrinth.com/mod/better-combat) - custom attack animations for the weapons of Mine Cells
   - [Patchouli](https://modrinth.com/mod/patchouli) - required for the Mine Cells Guidebook, containing most of the info you'll ever need about the mod.  
-  - [Roughly Enough Items](https://modrinth.com/mod/rei) - a must have to check the crafting recipes of items!
+  - [EMI](https://modrinth.com/mod/emi) - a must have to check the crafting recipes of items!
   - [Sodium](https://modrinth.com/mod/sodium) + [Iris](https://modrinth.com/mod/iris) - performance boost + shader support
   - [Lootr](https://www.curseforge.com/minecraft/mc-mods/lootr-fabric) - loot in chests is generated for each player separately
   - [Gravestones](https://modrinth.com/mod/gravestones) - will make retrieving your items after death a lot easier

@@ -9,8 +9,9 @@ nav:
       - Tips & Progression Guide: minecells/progression-guide.md
       - Technical Info:
           - Configuration: minecells/config.md
-          - For Datapack Creators: minecells/datapacks.md
           - Updating Mine Cells: minecells/updating.md
+      - Datapacks:
+          - Spawner Rune Definitions: minecells/spawner_runes.md
 
 markdown_extensions:
   - md_in_html

@@ -1,9 +1,42 @@
-# For Datapack Creators
+# Spawner Rune definitions
 
-## Spawner Rune Data
+Spawner Rune definitions are data files that determine which mobs should spawn from certain Spawner Runes, Elite Obelisks or in boss rooms.
 
-Spawner Runes can be individually configured through datapacks.
+They can be individually configured through datapacks.
 Their definitions are available in `data/<namespace>/spawner_runes/`
+
+You can define these files in a datapack to override the existing Mine Cells spawner rune definitions,
+or to create custom ones.
+
+To summon a Spawner Rune defined in `data/<namespace>/spawner_runes/<name>.json`, use the command:
+
+```
+/minecells:spawnerrune spawn <namespace>:<name>
+```
+
+## Spawner Rune definition index
+
+The given path is relative to `data/minecells/spawner_runes/`, and is missing the .json suffix
+
+| Path                             | Info                                                                            |
+| -------------------------------- | ------------------------------------------------------------------------------- |
+| **Spawner Runes** {: colspan=2}  |                                                                                 |
+| prison                           | All Spawner Runes in the Prisoners' Quarters                                    |
+| promenade/melee                  | Melee mobs in Promenade                                                         |
+| promenade/ranged                 | Ranged mobs in Promenade                                                        |
+| promenade/protector              | The Protector mob of the Promenade                                              |
+| ramparts_flies                   | Buzzcutters in Ramparts                                                         |
+| ramparts_melee                   | Melee mobs in Ramparts                                                          |
+| ramparts_ranged                  | Ranged mobs in Ramparts                                                         |
+| ramparts_mixed                   | Both melee and ranged mobs in Ramparts                                          |
+| sweeper                          | The Sweeper mob of the Ramparts                                                 |
+| **Elite Obelisks** {: colspan=2} |                                                                                 |
+| elite/vine_rune                  | The Undead Archer summoned in the Promenade, dropping a Vine Rune when defeated |
+| **Boss Rooms** {: colspan=2}     |                                                                                 |
+| boss/concierge                   | The Concierge boss that spawns on the Black Bridge                              |
+| boss/conjunctivius               | The Conjunctivius boss that spawns in the Insufferable Crypt                    |
+
+## Example Spawner Rune json files
 
 Here's an `example.json` Spawner Rune definition file:
 
@@ -51,15 +84,6 @@ Here's an `example.json` Spawner Rune definition file:
     }
   ]
 }
-```
-
-You can define these files in a datapack to override the existing Mine Cells spawner rune definitions,
-or to create custom ones.
-
-To summon a Spawner Rune defined in `data/<namespace>/spawner_runes/<name>.json`, use the command:
-
-```
-/minecells:spawnerrune spawn <namespace>:<name>
 ```
 
 ### Custom attributes
