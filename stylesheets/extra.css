@@ -31,11 +31,11 @@ a:hover img {
 }
 
 .md-typeset .admonition.info {
-  border-color: #4cae4f;
+  border-color: #b349ab;
 }
 
 .md-typeset .admonition.info .admonition-title {
-  background-color: #263c28;
+  background-color: #49284f;
   padding-left: 0.5rem;
 }
 
@@ -54,7 +54,7 @@ hr {
 }
 
 .highlight-italics em {
-  border: 1px solid rgb(26, 121, 26);
+  border: 1px solid #781887;
   font-weight: bold;
 }
 
