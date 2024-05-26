@@ -82,8 +82,48 @@ To tweak the attributes, include the optional `attributes` map field in the desi
           "weight": 1,
           "entity": "minecells:leaping_zombie",
           "attributes": {
-            "generic.max_health": 200,
-            "generic.movement_speed": 0.5
+            "generic.max_health": 200,     // set max health to 200 points (100 hearts)
+            "generic.movement_speed": 0.5  // set movement speed to 0.5 (which is quite a bit quicker than the default)
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Custom NBT
+
+{{since("1.20.1-1.7.0")}}
+
+Exact NBT data can also be appended to spawned mobs.
+
+/// info | NOTE:
+  `isElite` and `additionalLootTable` used in this definition are only implemented for Mine Cells entities!  
+  You'll have to research your entity-specific and generic NBT tags by yourself to make them work properly.
+///
+
+```json
+{
+  "playerDistance": 16.0,
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "weight": 1,
+          "entity": "minecells:undead_archer",
+          "attributes": {
+            "generic.max_health": 100.0,
+            "generic.movement_speed": 0.35,
+            "generic.attack_damage": 8.0
+          },
+          "nbt": {
+            "isElite": true, // set the isElite NBT tag 
+                             // (will upscale the entity and display an "ELITE" 
+                             // badge above it)
+            "additionalLootTable": "minecells:entities/elite/vine_rune" 
+              // setup additional loot table for the entity to drop on death
           }
         }
       ]
