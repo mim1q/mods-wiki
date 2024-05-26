@@ -7,6 +7,7 @@ nav:
   - Mine Cells:
       - About Mine Cells: minecells/index.md
       - Tips & Progression Guide: minecells/progression-guide.md
+      - Common Issues: minecells/common-issues.md
       - Technical Info:
           - Configuration: minecells/config.md
           - Updating Mine Cells: minecells/updating.md
