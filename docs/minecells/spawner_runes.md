@@ -18,23 +18,23 @@ To summon a Spawner Rune defined in `data/<namespace>/spawner_runes/<name>.json`
 
 The given path is relative to `data/minecells/spawner_runes/`, and is missing the .json suffix
 
-| Path                             | Info                                                                            |
-| -------------------------------- | ------------------------------------------------------------------------------- |
-| **Spawner Runes** {: colspan=2}  |                                                                                 |
-| prison                           | All Spawner Runes in the Prisoners' Quarters                                    |
-| promenade/melee                  | Melee mobs in Promenade                                                         |
-| promenade/ranged                 | Ranged mobs in Promenade                                                        |
-| promenade/protector              | The Protector mob of the Promenade                                              |
-| ramparts_flies                   | Buzzcutters in Ramparts                                                         |
-| ramparts_melee                   | Melee mobs in Ramparts                                                          |
-| ramparts_ranged                  | Ranged mobs in Ramparts                                                         |
-| ramparts_mixed                   | Both melee and ranged mobs in Ramparts                                          |
-| sweeper                          | The Sweeper mob of the Ramparts                                                 |
-| **Elite Obelisks** {: colspan=2} |                                                                                 |
-| elite/vine_rune                  | The Undead Archer summoned in the Promenade, dropping a Vine Rune when defeated |
-| **Boss Rooms** {: colspan=2}     |                                                                                 |
-| boss/concierge                   | The Concierge boss that spawns on the Black Bridge                              |
-| boss/conjunctivius               | The Conjunctivius boss that spawns in the Insufferable Crypt                    |
+| Path {:style="width:25%"}                                   | Info                                                                            |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| **Spawner Runes** {: colspan=2 style="text-align:center;"}  |                                                                                 |
+| prison                                                      | All Spawner Runes in the Prisoners' Quarters                                    |
+| promenade/melee                                             | Melee mobs in Promenade                                                         |
+| promenade/ranged                                            | Ranged mobs in Promenade                                                        |
+| promenade/protector                                         | The Protector mob of the Promenade                                              |
+| ramparts_flies                                              | Buzzcutters in Ramparts                                                         |
+| ramparts_melee                                              | Melee mobs in Ramparts                                                          |
+| ramparts_ranged                                             | Ranged mobs in Ramparts                                                         |
+| ramparts_mixed                                              | Both melee and ranged mobs in Ramparts                                          |
+| sweeper                                                     | The Sweeper mob of the Ramparts                                                 |
+| **Elite Obelisks** {: colspan=2 style="text-align:center;"} |                                                                                 |
+| elite/vine_rune                                             | The Undead Archer summoned in the Promenade, dropping a Vine Rune when defeated |
+| **Boss Rooms** {: colspan=2 style="text-align:center;"}     |                                                                                 |
+| boss/concierge                                              | The Concierge boss that spawns on the Black Bridge                              |
+| boss/conjunctivius                                          | The Conjunctivius boss that spawns in the Insufferable Crypt                    |
 
 ## Example Spawner Rune json files
 
@@ -90,8 +90,8 @@ Here's an `example.json` Spawner Rune definition file:
 
 {{since("1.20.1-1.6.1")}}
 
-Modpack developers can now tweak the attributes of the entities spawned by Spawner Runes individually.
-This means Mine Cells dungeons can finally be adjusted to the pack's difficulty.
+Modpack developers can tweak the attributes of the entities spawned by Spawner Runes individually.
+This means Mine Cells dungeons can be adjusted to the pack's difficulty.
 
 To tweak the attributes, include the optional `attributes` map field in the desired element of `entries`, like so:
 
@@ -106,8 +106,11 @@ To tweak the attributes, include the optional `attributes` map field in the desi
           "weight": 1,
           "entity": "minecells:leaping_zombie",
           "attributes": {
-            "generic.max_health": 200,     // set max health to 200 points (100 hearts)
-            "generic.movement_speed": 0.5  // set movement speed to 0.5 (which is quite a bit quicker than the default)
+            // set max health to 200 points (100 hearts)
+            "generic.max_health": 200,    
+            // set movement speed to 0.5 
+            // (which is quite a bit quicker than the default)
+            "generic.movement_speed": 0.5
           }
         }
       ]
@@ -120,7 +123,7 @@ To tweak the attributes, include the optional `attributes` map field in the desi
 
 {{since("1.20.1-1.7.0")}}
 
-Exact NBT data can also be appended to spawned mobs.
+Arbitrary NBT data can also be appended to spawned mobs.
 
 /// info | NOTE:
   `isElite` and `additionalLootTable` used in this definition are only implemented for Mine Cells entities!  
@@ -143,11 +146,11 @@ Exact NBT data can also be appended to spawned mobs.
             "generic.attack_damage": 8.0
           },
           "nbt": {
-            "isElite": true, // set the isElite NBT tag 
-                             // (will upscale the entity and display an "ELITE" 
-                             // badge above it)
+            // set the isElite NBT tag 
+            // (will upscale the entity and display an "ELITE" badge above it)
+            "isElite": true, 
+            // setup additional loot table for the entity to drop on death
             "additionalLootTable": "minecells:entities/elite/vine_rune" 
-              // setup additional loot table for the entity to drop on death
           }
         }
       ]

@@ -12,6 +12,7 @@ nav:
           - Updating Mine Cells: minecells/updating.md
       - Datapacks:
           - Spawner Rune Definitions: minecells/spawner_runes.md
+          - Custom Cell Crafter Recipes: minecells/cell_crafter_recipes.md
 
 markdown_extensions:
   - md_in_html
