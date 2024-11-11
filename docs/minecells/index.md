@@ -18,7 +18,7 @@
 </div>
 
 /// warning | This wiki is primarily dedicated for mod setup and technical stuff.
-In the newest versions, an in-game wiki (the *Mine Cells Guidebook*) is available if you install [Patchouli](https://modrinth.com/mod/patchouli).  
+In the newest versions, an in-game wiki (the _Mine Cells Guidebook_) is available if you install [Patchouli](https://modrinth.com/mod/patchouli).  
 That Guidebook will be the official feature wiki and should be updated for the version it's in.  
 If you need to view the older version of this wiki, it's available [here](https://old.mim1q.dev/minecells).
 

@@ -14,6 +14,8 @@ nav:
       - Datapacks:
           - Spawner Rune Definitions: minecells/spawner_runes.md
           - Custom Cell Crafter Recipes: minecells/cell_crafter_recipes.md
+  - Gimm1q:
+      - Value Calculators: gimm1q/value-calculators.md
 
 markdown_extensions:
   - md_in_html
