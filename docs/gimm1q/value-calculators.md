@@ -98,7 +98,7 @@ If you have any questions about how to use Value Calculators as a developer, or 
 
 ### Developers
 
-The [Example Use Case section](#example-usage) above shows a simple example of how to use Value Calculators in your mod. Most of the code in Gimm1q related to Value Calculators has documentation, so you can refer to that for more information.
+The [Example Use Case section](#example-use-case) above shows a simple example of how to use Value Calculators in your mod. Most of the code in Gimm1q related to Value Calculators has documentation, so you can refer to that for more information.
 
 Advanced usage examples:
 
